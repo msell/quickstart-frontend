@@ -2,5 +2,5 @@
 
 angular.module('services.config', [])
   .constant('configuration', {
-    apiUrl: 'http://localhost:1337/'
+    apiUrl: 'http://quickstart-api.herokuapp.com/'
   });

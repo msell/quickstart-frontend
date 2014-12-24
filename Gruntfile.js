@@ -244,6 +244,19 @@ module.exports = function (grunt) {
                     src: ['./config/config.js'],
                     dest: '<%= yeoman.app %>/scripts/services/'
       }]
+            },
+            production: {
+                options: {
+                    patterns: [{
+                        json: grunt.file.readJSON('./config/environments/production.json')
+      }]
+                },
+                files: [{
+                    expand: true,
+                    flatten: true,
+                    src: ['./config/config.js'],
+                    dest: '<%= yeoman.app %>/scripts/services/'
+    }]
             }
         },
         // concat: {
