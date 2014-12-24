@@ -1,7 +1,7 @@
 /**
  * Created by matt on 11/15/14.
  */
-angular.module('meanApp').config(function ($urlRouterProvider, $stateProvider, $httpProvider, $authProvider, API_URL) {
+angular.module('meanApp').config(function ($urlRouterProvider, $stateProvider, $httpProvider, $authProvider, configuration) {
 
     // if none of these states fit, just go home
     $urlRouterProvider.otherwise('/');
@@ -36,8 +36,8 @@ angular.module('meanApp').config(function ($urlRouterProvider, $stateProvider, $
     });
 
     
-    $authProvider.loginUrl = API_URL + 'auth/login';
-    $authProvider.signupUrl = API_URL + 'auth/register';
+    $authProvider.loginUrl = configuration.apiUrl + 'auth/login';
+    $authProvider.signupUrl = configuration.apiUrl + 'auth/register';
     
     // if using express use these routes
 //    $authProvider.loginUrl = API_URL + 'login';
@@ -45,19 +45,16 @@ angular.module('meanApp').config(function ($urlRouterProvider, $stateProvider, $
     
     $authProvider.google({
         clientId: '293729951422-1aoar6i6acc23l8lrmb0m2dm9ommefq9.apps.googleusercontent.com',
-        url: API_URL + 'auth/google'
+        url: configuration.apiUrl + 'auth/google'
     });
     
     $authProvider.facebook({
         clientId: '1503487916590538',
-        url: API_URL + 'auth/facebook'
+        url: configuration.apiUrl + 'auth/facebook'
     });
 
     $httpProvider.interceptors.push('authInterceptor');
 })
-.constant('API_URL', 'http://localhost:1337/')
-//.constant('API_URL', 'http://localhost:3000/')
-
 
 .run(function ($window) {
     var params = $window.location.search.substring(1);

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('meanApp')
-    .service('auth', function ($http, API_URL, authToken, $state, $window, $q) {
+    .service('auth', function ($http, configuration, authToken, $state, $window, $q) {
 
         function authSuccessful(res) {
             authToken.setToken(res.token);
@@ -9,14 +9,14 @@ angular.module('meanApp')
         }
 
         this.login = function (email, password) {
-            return $http.post(API_URL + 'login', {
+            return $http.post(configuration.apiUrl + 'login', {
                 email: email,
                 password: password
             }).success(authSuccessful);
         };
 
         this.register = function (email, password) {
-            return $http.post(API_URL + 'register', {
+            return $http.post(configuration.apiUrl + 'register', {
                 email: email,
                 password: password
             }).success(authSuccessful);
@@ -44,7 +44,7 @@ angular.module('meanApp')
                     var code = event.data;
                     popup.close();
 
-                    $http.post(API_URL + 'auth/google', {
+                    $http.post(configuration.apiUrl + 'auth/google', {
                         code: code,
                         clientId: clientId,
                         redirectUri: window.location.origin
