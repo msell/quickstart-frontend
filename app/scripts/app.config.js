@@ -49,7 +49,7 @@ angular.module('meanApp').config(function ($urlRouterProvider, $stateProvider, $
     });
     
     $authProvider.facebook({
-        clientId: '1503487916590538',
+        clientId: configuration.facebookClientId,
         url: configuration.apiUrl + 'auth/facebook'
     });
 
