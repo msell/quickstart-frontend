@@ -2,5 +2,6 @@
 
 angular.module('services.config', [])
   .constant('configuration', {
-    apiUrl: '@@apiUrl'
+    apiUrl: '@@apiUrl',
+    facebookClientId: '@@facebookClientId'
   });
