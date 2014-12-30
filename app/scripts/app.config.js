@@ -6,6 +6,8 @@ angular.module('meanApp').config(function ($urlRouterProvider, $stateProvider, $
     // if none of these states fit, just go home
     $urlRouterProvider.otherwise('/');
 
+    //$urlRouterProvider.when('/privacy', '/privacy');
+    
     $stateProvider
         .state('main', {
             url: '/',
@@ -28,7 +30,7 @@ angular.module('meanApp').config(function ($urlRouterProvider, $stateProvider, $
         url: '/vehicles',
         templateUrl: '/views/vehicles.html',
         controller: 'VehiclesCtrl'
-    })
+    })   
 
     .state('logout', {
         url: '/logout',
