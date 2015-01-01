@@ -34,6 +34,12 @@ angular.module('meanApp').config(function ($urlRouterProvider, $stateProvider, $
         templateUrl: '/views/vehicles.html',
         controller: 'VehiclesCtrl'
     })   
+    
+    .state('weighIns', {
+        url: '/weighIns',
+        templateUrl: '/views/weighin.html',
+        controller: 'WeighinCtrl'
+    })   
 
     .state('logout', {
         url: '/logout',
