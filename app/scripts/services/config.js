@@ -2,6 +2,6 @@
 
 angular.module('services.config', [])
   .constant('configuration', {
-    apiUrl: 'http://quickstart-api.herokuapp.com/',
-    facebookClientId: '791143367623515'
+    apiUrl: 'http://localhost:1337/',
+    facebookClientId: '1503487916590538'
   });

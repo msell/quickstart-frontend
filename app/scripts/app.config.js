@@ -5,8 +5,6 @@ angular.module('meanApp').config(function ($urlRouterProvider, $stateProvider, $
 
     // if none of these states fit, just go home
     $urlRouterProvider.otherwise('/');
-
-    //$urlRouterProvider.when('/privacy', '/privacy');
     
     $stateProvider
         .state('main', {
@@ -14,6 +12,11 @@ angular.module('meanApp').config(function ($urlRouterProvider, $stateProvider, $
             templateUrl: '/views/main.html'
         })
 
+    .state('privacy', {
+        url: '/privacy',
+        templateUrl: '/views/privacy.html'        
+    })
+    
     .state('register', {
         url: '/register',
         templateUrl: '/views/register.html',
