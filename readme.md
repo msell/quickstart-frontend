@@ -12,6 +12,8 @@ Read more about [environment speicific configuration in Angular](http://newtriks
 add heroku as a remote
 heroku git:remote -a quickstart-frontend
 
+
+grunt build:production
 ```
 git push heroku master
 ```
