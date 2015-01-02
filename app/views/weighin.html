@@ -5,7 +5,8 @@
         </legend>
 
         <input id="newWeight" type="text" placeholder="Enter Weight" class="input-xlarge" required="true">    
-        <input id="weighDate" type="text" class="input-xlarge" required="true">   
+        <input type="date" id="dateInput" name="input" ng-model="date"
+        min="2014-01-01" required /> 
         <button id="addEntry" name="addEntry" class="btn-xs btn-primary">
             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
         </button>

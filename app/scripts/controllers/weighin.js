@@ -13,6 +13,8 @@ angular.module('meanApp')
         if (!$auth.isAuthenticated()) {
             $state.go('login');
         }
+    
+    $scope.date = new Date();
 
         $scope.weighIns = [
             {
