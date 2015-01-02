@@ -14,6 +14,11 @@ angular.module('meanApp')
             $state.go('login');
         }
     
+    $scope.addEntry = function(){
+        $scope.weighIns.push({'weight': $scope.weight, 'date': $scope.date});
+    };
+    
+    $scope.weight = 0; // todo: default to last weigh in, add up/down control
     $scope.date = new Date();
 
         $scope.weighIns = [
