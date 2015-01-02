@@ -1,1 +1,24 @@
-<p>This is the weighIn view.</p>
+<form class='form-horizontal'>
+    <fieldset>
+        <legend>
+            Weigh Ins
+        </legend>
+
+        <input id="newWeight" type="text" placeholder="Enter Weight" class="input-xlarge" required="true">     
+
+        <button id="addEntry" name="addEntry" class="btn btn-primary">Add</button>
+            
+    </fieldset>
+</form>
+
+<div ng-repeat="entry in weighIns">{{entry.weight}}</div>
+<!--
+<div>
+    <table class="table table-striped">
+        <thead></thead>
+        <tbody ng-repeat="weighIn in $scope.weighIns">
+            <tr><td>{{weight}}</td><td>{{date}}</td></tr>
+        </tbody>
+    </table>
+    
+</div>-->
