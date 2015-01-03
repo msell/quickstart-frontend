@@ -1,4 +1,7 @@
-<p>Welcome to agile fitness tracker.  Please tell us a little about goals so we can get started tracking your progress.</p>
+
+<p>
+    Welcome to agile fitness tracker.  Please tell us a little about goals so we can get started tracking your progress.
+</p>
 
 <form name="setGoal" ng-submit="submitted = true" novalidate>
     <div class="form-input">
@@ -18,4 +21,5 @@
         <input name="endDate" type="date" ng-model="goal.endDate" required ng-model-options="{updateOn: 'blur'}" >
         <p class="help-block" ng-show="setGoal.endDate.$dirty && setGoal.endDate.$invalid">Please enter a end date.</p>
     </div>
+    <button class="btn btn-primary btn-sm">Set Goal</button>
 </form>
