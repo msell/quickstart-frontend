@@ -1,0 +1,9 @@
+<p>Welcome to agile fitness tracker.  Please tell us a little about goals so we can get started tracking your progress.</p>
+
+<form name="setGoal" ng-submit="submitted = true" novalidate>
+    <div class="form-input">
+        <label type="text">How much do you weigh today?</label>
+        <input name="initialWeight" type="number" ng-model="initialWeight" placeholder="Current Weight" required ng-model-options="{updateOn: 'blur'}" >
+        <p class="help-block" ng-show="setGoal.initialWeight.$dirty && setGoal.initialWeight.$invalid">Please enter a valid current weight.</p>
+    </div>
+</form>
