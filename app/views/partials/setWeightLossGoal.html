@@ -6,13 +6,13 @@
 <form name="setGoal" ng-submit="submitted = true" novalidate>
     <div class="form-input row">
         <label class="col-md-3" type="text">How much do you weigh today?</label>
-        <input class="col-md-3" name="initialWeight" type="number" ng-model="goal.initialWeight" placeholder="Current Weight" required ng-model-options="{updateOn: 'blur'}" >
+        <input class="col-md-3" name="initialWeight" type="number" ng-model="goal.currentWeight" placeholder="Current Weight" required ng-model-options="{updateOn: 'blur'}" >
         <p class="help-block" ng-show="setGoal.initialWeight.$dirty && setGoal.initialWeight.$invalid">Please enter a valid current weight.</p>
     </div>
     
     <div class="form-input row">
         <label class="col-md-3" type="text">What is your target weight?</label>
-        <input class="col-md-3" name="targetWeight" type="number" ng-model="goal.targetWeight" placeholder="Target Weight" required ng-model-options="{updateOn: 'blur'}" >
+        <input class="col-md-3" name="targetWeight" type="number" ng-model="goal.goalWeight" placeholder="Target Weight" required ng-model-options="{updateOn: 'blur'}" >
         <p class="help-block" ng-show="setGoal.targetWeight.$dirty && setGoal.targetWeight.$invalid">Please enter a valid target weight.</p>
     </div>
     
@@ -23,6 +23,6 @@
     </div>
     <div class = "row">
         <span class="col-md-3"></span>
-    <button class="btn btn-primary btn-sm col-md-3">Set Goal</button>
+    <button ng-click="goal.create()" class="btn btn-primary btn-sm col-md-3">Set Goal</button>
         </div>
 </form>
