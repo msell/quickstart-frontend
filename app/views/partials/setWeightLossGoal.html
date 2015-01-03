@@ -6,4 +6,16 @@
         <input name="initialWeight" type="number" ng-model="initialWeight" placeholder="Current Weight" required ng-model-options="{updateOn: 'blur'}" >
         <p class="help-block" ng-show="setGoal.initialWeight.$dirty && setGoal.initialWeight.$invalid">Please enter a valid current weight.</p>
     </div>
+    
+    <div class="form-input">
+        <label type="text">What is your target weight?</label>
+        <input name="targetWeight" type="number" ng-model="targetWeight" placeholder="Target Weight" required ng-model-options="{updateOn: 'blur'}" >
+        <p class="help-block" ng-show="setGoal.targetWeight.$dirty && setGoal.targetWeight.$invalid">Please enter a valid target weight.</p>
+    </div>
+    
+    <div class="form-input">
+        <label type="text">When would you like to reach your goal?</label>
+        <input name="endDate" type="date" ng-model="endDate" required ng-model-options="{updateOn: 'blur'}" >
+        <p class="help-block" ng-show="setGoal.endDate.$dirty && setGoal.endDate.$invalid">Please enter a end date.</p>
+    </div>
 </form>
