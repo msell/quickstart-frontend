@@ -19,13 +19,15 @@ angular.module('meanApp')
                 this.currentWeight = 0;
                 
                 this.create = function(){
-                    console.log('http post goal');
-                    $http.post(configuration.apiUrl + 'weightLossGoal'),{
+                    var request = {
                         'startDate': this.currentDate,
                         'endDate': this.endDate,
-                        'currentWeight': this.currentWeight,
-                        'goalWeight' : this.goalWeight
+                        'startWeight': this.currentWeight,
+                        'endWeight' : this.goalWeight
+                        //'user': 1
                     }
+                    console.log(request);
+                    $http.post(configuration.apiUrl + 'weightLossGoal',request)
                 };
             }
         }
