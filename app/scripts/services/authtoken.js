@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('meanApp')
+angular.module('quickstart-frontend')
     .factory('authToken', function ($window) {
         var storage = $window.localStorage;
         var cachedToken;

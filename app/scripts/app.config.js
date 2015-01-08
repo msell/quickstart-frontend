@@ -1,7 +1,7 @@
 /**
  * Created by matt on 11/15/14.
  */
-angular.module('meanApp').config(function ($urlRouterProvider, $stateProvider, $httpProvider, $authProvider, configuration) {
+angular.module('quickstart-frontend').config(function ($urlRouterProvider, $stateProvider, $httpProvider, $authProvider, configuration) {
 
     // if none of these states fit, just go home
     $urlRouterProvider.otherwise('/');

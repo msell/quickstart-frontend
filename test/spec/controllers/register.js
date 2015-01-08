@@ -3,7 +3,7 @@
 describe('Controller: RegisterCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('meanAppApp'));
+  beforeEach(module('quickstart-frontend'));
 
   var RegisterCtrl,
     scope;

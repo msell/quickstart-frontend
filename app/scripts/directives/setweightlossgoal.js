@@ -1,12 +1,6 @@
 'use strict';
 
-/**
- * @ngdoc directive
- * @name meanApp.directive:setWeightLossGoal
- * @description
- * # setWeightLossGoal
- */
-angular.module('meanApp')
+angular.module('quickstart-frontend')
     .directive('setWeightLossGoal', function ($http, configuration) {
         return {
             restrict: 'E',

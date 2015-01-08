@@ -1,13 +1,6 @@
 'use strict';
 
-/**
- * @ngdoc service
- * @name meanApp.alert
- * @description
- * # alert
- * Service in the meanApp.
- */
-angular.module('meanApp')
+angular.module('quickstart-frontend')
   .service('alert', function ($rootScope, $timeout) {
     var alertTimeout;
 

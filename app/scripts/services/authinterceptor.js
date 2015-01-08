@@ -1,7 +1,7 @@
 'use strict';
 
 
-angular.module('meanApp')
+angular.module('quickstart-frontend')
     .factory('authInterceptor', function (authToken) {
 
         // Public API here

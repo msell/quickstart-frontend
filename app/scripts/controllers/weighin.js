@@ -1,13 +1,6 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name meanApp.controller:WeighinCtrl
- * @description
- * # WeighinCtrl
- * Controller of the meanApp
- */
-angular.module('meanApp')
+angular.module('quickstart-frontend')
     .controller('WeighinCtrl', function ($scope, $http, configuration, alert, $auth, $state) {
 
         if (!$auth.isAuthenticated()) {

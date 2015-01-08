@@ -3,7 +3,7 @@
 describe('Service: authToken', function () {
 
   // load the service's module
-  beforeEach(module('meanApp'));
+  beforeEach(module('quickstart-frontend'));
 
   // instantiate service
   var authToken;
