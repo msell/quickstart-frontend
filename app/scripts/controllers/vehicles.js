@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('meanApp')
+angular.module('quickstart-frontend')
     .controller('VehiclesCtrl', function ($scope, $http, configuration, alert) {
         $http.get(configuration.apiUrl + 'vehicles').success(function (vehicles) {            
             $scope.vehicles = vehicles;

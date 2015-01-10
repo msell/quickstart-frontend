@@ -3,7 +3,7 @@
 describe('Service: authInterceptor', function () {
 
   // load the service's module
-  beforeEach(module('meanApp'));
+  beforeEach(module('quickstart-frontend'));
 
   // instantiate service
   var authInterceptor;

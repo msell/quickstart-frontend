@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('meanApp')
+angular.module('quickstart-frontend')
   .controller('HeaderCtrl', function ($scope, $auth) {
     $scope.isAuthenticated = $auth.isAuthenticated;
   });

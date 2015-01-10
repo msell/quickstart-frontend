@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('meanApp')
+angular.module('quickstart-frontend')
     .service('auth', function ($http, configuration, authToken, $state, $window, $q) {
 
         function authSuccessful(res) {

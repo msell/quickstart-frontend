@@ -3,7 +3,7 @@
 describe('Controller: LoginCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('meanApp'));
+  beforeEach(module('quickstart-frontend'));
 
   var LoginCtrl,
     scope;

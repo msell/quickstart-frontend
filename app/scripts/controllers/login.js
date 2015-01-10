@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('meanApp')
+angular.module('quickstart-frontend')
     .controller('LoginCtrl', function ($scope, alert, $auth) {
         $scope.submit = function () {
 
