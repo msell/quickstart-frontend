@@ -16,7 +16,14 @@ angular.module('meanApp')
     
     $scope.addEntry = function(){
         $scope.weighIns.push({'weight': $scope.weight, 'date': $scope.date});
+            
     };
+    
+    $scope.getGoal = function () {
+                    $http.get(configuration.apiUrl + 'weightlossgoal')
+                };
+    
+    $scope.goals = [];
     
     $scope.weight = 0; // todo: default to last weigh in, add up/down control
     $scope.date = new Date();

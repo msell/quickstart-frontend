@@ -1,30 +1,27 @@
-'use strict';
+(function () {
+    'use strict';
 
-/**
- * @ngdoc directive
- * @name meanApp.directive:setWeightLossGoal
- * @description
- * # setWeightLossGoal
- */
-angular.module('meanApp')
+    angular.module('meanApp')
     .directive('setWeightLossGoal', function ($http, configuration) {
+        
         return {
             restrict: 'E',
             templateUrl: '../views/partials/setWeightLossGoal.html',
             controllerAs: 'goal',
             controller: function () {
-                this.currentDate = new Date();
-                this.endDate = new Date();
-                this.goalWeight = 0;
-                this.currentWeight = 0;
+                var vm = this;
+                vm.currentDate = new Date();
+                vm.endDate = new Date();
+                vm.goalWeight = 0;
+                vm.currentWeight = 0;
 
-                this.create = function () {
+                vm.create = function () {
 
                     var request = {
-                        'startDate': this.currentDate,
-                        'endDate': this.endDate,
-                        'startWeight': this.currentWeight,
-                        'endWeight': this.goalWeight
+                        'startDate': vm.currentDate,
+                        'endDate': vm.endDate,
+                        'startWeight': vm.currentWeight,
+                        'endWeight': vm.goalWeight
                     };
                     console.log(request);
                     $http.post(configuration.apiUrl + 'weightLossGoal', request)
@@ -32,3 +29,4 @@ angular.module('meanApp')
             }
         }
     });
+})();
