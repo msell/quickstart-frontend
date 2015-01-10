@@ -3,7 +3,7 @@
 describe('Controller: WeighinCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('quickstart-frontend'));
+  beforeEach(module('quickstartFrontend'));
 
   var WeighinCtrl,
     scope;

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('quickstart-frontend')
+angular.module('quickstartFrontend')
     .controller('RegisterCtrl', function ($scope, alert, $auth) {
         $scope.submit = function () {
             

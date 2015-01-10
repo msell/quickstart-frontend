@@ -3,7 +3,7 @@
 describe('Directive: setWeightLossGoal', function () {
 
   // load the directive's module
-  beforeEach(module('meanApp'));
+  beforeEach(module('quickstartFrontend'));
 
   var element,
     scope;

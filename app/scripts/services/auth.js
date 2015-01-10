@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('quickstart-frontend')
+angular.module('quickstartFrontend')
     .service('auth', function ($http, configuration, authToken, $state, $window, $q) {
 
         function authSuccessful(res) {

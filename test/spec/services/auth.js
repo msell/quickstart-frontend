@@ -3,7 +3,7 @@
 describe('Service: auth', function () {
 
   // load the service's module
-  beforeEach(module('meanApp'));
+  beforeEach(module('quickstartFrontend'));
 
   // instantiate service
   var auth;

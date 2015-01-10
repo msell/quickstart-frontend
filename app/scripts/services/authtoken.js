@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('quickstart-frontend')
+angular.module('quickstartFrontend')
     .factory('authToken', function ($window) {
         var storage = $window.localStorage;
         var cachedToken;

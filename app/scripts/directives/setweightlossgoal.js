@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('meanApp')
+    angular.module('quickstartFrontend')
     .directive('setWeightLossGoal', function ($http, configuration) {
         
         return {

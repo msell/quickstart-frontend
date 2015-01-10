@@ -1,7 +1,7 @@
 'use strict';
 
 
-angular.module('quickstart-frontend')
+angular.module('quickstartFrontend')
     .factory('authInterceptor', function (authToken) {
 
         // Public API here

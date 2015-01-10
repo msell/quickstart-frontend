@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('quickstart-frontend')
+angular.module('quickstartFrontend')
   .service('alert', function ($rootScope, $timeout) {
     var alertTimeout;
 

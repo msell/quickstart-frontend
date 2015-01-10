@@ -10,7 +10,7 @@ Read more about [environment speicific configuration in Angular](http://newtriks
 # Deploy to heroku
 
 add heroku as a remote
-heroku git:remote -a quickstart-frontend
+heroku git:remote -a quickstartFrontend
 
 
 grunt build:production

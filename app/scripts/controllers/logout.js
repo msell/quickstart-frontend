@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('quickstart-frontend')
+angular.module('quickstartFrontend')
     .controller('LogoutCtrl', function ($auth, $state) {
         $auth.logout();
         $state.go('main');

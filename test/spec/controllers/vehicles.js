@@ -3,7 +3,7 @@
 describe('Controller: VehiclesCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('meanApp'));
+  beforeEach(module('quickstartFrontend'));
 
   var VehiclesCtrl,
     scope;

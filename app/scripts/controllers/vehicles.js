@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('quickstart-frontend')
+angular.module('quickstartFrontend')
     .controller('VehiclesCtrl', function ($scope, $http, configuration, alert) {
         $http.get(configuration.apiUrl + 'vehicles').success(function (vehicles) {            
             $scope.vehicles = vehicles;

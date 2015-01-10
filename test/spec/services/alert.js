@@ -3,7 +3,7 @@
 describe('Service: alert', function () {
 
   // load the service's module
-  beforeEach(module('quickstart-frontend'));
+  beforeEach(module('quickstartFrontend'));
 
   // instantiate service
   var alert;

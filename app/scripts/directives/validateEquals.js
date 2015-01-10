@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('quickstart-frontend')
+angular.module('quickstartFrontend')
   .directive('validateEquals', function () {
     return {
       require: 'ngModel',

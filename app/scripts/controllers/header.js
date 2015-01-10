@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('quickstart-frontend')
+angular.module('quickstartFrontend')
   .controller('HeaderCtrl', function ($scope, $auth) {
     $scope.isAuthenticated = $auth.isAuthenticated;
   });
