@@ -65,6 +65,7 @@ angular.module('quickstartFrontend').config(function ($urlRouterProvider, $state
     });
     
     $authProvider.twitter({
+        clientId: 'UENUvKrmfHn31MmBy2Xufo8QN',
         url: configuration.apiUrl + 'auth/twitter'
     })
 
