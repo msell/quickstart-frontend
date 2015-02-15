@@ -63,6 +63,10 @@ angular.module('quickstartFrontend').config(function ($urlRouterProvider, $state
         clientId: JSON.stringify(configuration.facebookClientId),
         url: configuration.apiUrl + 'auth/facebook'
     });
+    
+    $authProvider.twitter({
+        url: configuration.apiUrl + 'auth/twitter'
+    })
 
     $httpProvider.interceptors.push('authInterceptor');
 })
